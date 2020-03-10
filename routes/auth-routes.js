@@ -10,7 +10,7 @@ router.get("/login", (req, res) => {
 router.get("/google", passport.authenticate("google", { scope: ["profile", "email"] }));
 
 //if login success, redirect here
-router.get("/google/redirect", (req, res) => {
+router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
     res.send("Login Success");
 });
 

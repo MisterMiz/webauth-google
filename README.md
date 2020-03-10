@@ -14,3 +14,6 @@
 * create passport setup
 * modify auth/google
 * move google secret kry to another floder
+
+## branch lesson03
+* get user profile and email from google
