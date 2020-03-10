@@ -5,3 +5,7 @@
 * npm init
 * npm i express passport ejs ...
 * create gitignore and add "node_modules"
+
+# branch lesson01
+* create login page
+* create authen route

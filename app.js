@@ -1,10 +1,18 @@
 const express = require("express");
 const path = require("path");
+const authRoutes = require("./routes/auth-routes");
+
 const app = express();
 
 app.set("view engine", "ejs");
 
-//Route(Services)
+// middle ware
+// authen
+app.use("/auth", authRoutes);
+
+// Route(Services)
+
+
 app.get("/",(req,res) => {
     // res.sendFile(path.join(__dirname, "views/home.html"));
     res.render("home.ejs");
