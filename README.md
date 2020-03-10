@@ -6,6 +6,11 @@
 * npm i express passport ejs ...
 * create gitignore and add "node_modules"
 
-# branch lesson01
+### branch lesson01
 * create login page
 * create authen route
+
+### branch lesson02
+* create passport setup
+* modify auth/google
+* move google secret kry to another floder
