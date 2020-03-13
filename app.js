@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const authRoutes = require("./routes/auth-routes");
+const profileRoutes = require("./routes/profile-routes");
 const passportSetup = require("./config/passport-setup");
 const passport = require("passport");
 const cookieSession = require("cookie-session");
@@ -26,6 +27,9 @@ app.use(passport.session());
 
 // authen
 app.use("/auth", authRoutes);
+
+//profile
+app.use("/profile", profileRoutes);
 
 // Route(Services)
 
